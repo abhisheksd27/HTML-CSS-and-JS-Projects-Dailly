@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  background-image: url("https://images.unsplash.com/photo-1452457750107-cd084dce177d?q=80&w=1101&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  text-align: center;
+  /* transition: filter 0.7s; */
+
+}
+
+.container h1{
+  font-size: 60px;
+  color: black;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 4px;
+  text-shadow: 2px 2px 2px rgba(250, 0, 0, 0.6);
+}
+
+.btn{
+    padding: 10px 20px;
+    border: none;
+    width: 200px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: orangered;
+    border-radius: 10px;
+    color: white
+}
+
+.btn:hover{
+    filter: brightness(0.8);
+}
+
+.active.container {
+  filter: blur(5px) brightness(0.7);
+}
+
+
+.popup-container {
+    
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    width: 400px;
+    height: 280px;
+    top: 30%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 2px rgba(250, 0, 0, 0.6);
+    background: url("https://images.unsplash.com/photo-1484651890318-ca4110437e20?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    
+  
+
+}
+
+h4{
+    color: white;
+    font-size: 35px;
+    margin: 10px;
+    padding: 10px;
+}
+
+label{
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.popup-btn {
+  background-color: orangered;
+  border: 2px solid black;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.input{
+    border: 1px solid red;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+
+}
+.input::placeholder{
+    color: lightgray;
+}
+
+.close-icon {
+  position: absolute;
+  color: white;
+  right: 10px;
+  top: 10px;
+}
+
+.close-icon:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.active.popup-container {
+  visibility: hidden;
+  opacity: 1;
+  top: 10%;
+} 

@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+
+    
+}
+
+h1{
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 4px;
+    color: red;
+    text-shadow: 0 2px 2px rgba(250,0,0,0.3);
+    white-space: nowrap;
+
+    
+}
+.container {
+  text-align: center;
+}
+
+.btn{
+    padding: 30px 50px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 30px;
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(254,0,0,.3);
+    background-image: url("images/tom.png");
+    background-size: cover;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.btn:hover{
+    background-color: rgba(254,0,0,.3);
+    
+}
+
